@@ -2,7 +2,7 @@
 
 A lightweight, Gruvbox-inspired i3wm configuration built for speed, simplicity, and aesthetics.
 
-![Wallpaper](wallpaper.jpg)
+![Wallpaper](finalimg.jpg)
 
 ## Included Configurations
 
