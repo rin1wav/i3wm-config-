@@ -1,31 +1,37 @@
-# i3wm Dotfiles
+# i3wm Config
 
-A minimal, Gruvbox-inspired i3wm desktop configuration focused on aesthetics, productivity, and performance.
+A lightweight, Gruvbox-inspired i3wm configuration built for speed, simplicity, and aesthetics.
+
+![Wallpaper](wallpaper.jpg)
+
+## Included Configurations
+
+| File | Description |
+|------|-------------|
+| `config` | Main i3 configuration |
+| `picom.conf` | Picom compositor configuration |
+| `config.ini` | Polybar configuration |
+| `launch.sh` | Polybar launch script |
+| `config.conf` | Rofi configuration |
+| `black-outline.rasi` | Rofi theme |
+| `alacritty.toml` | Alacritty terminal configuration |
+| `conky.conf` | Conky system monitor |
+| `dunstrc` | Dunst notification daemon |
+| `tree_tiler.py` | Tree-based tiling helper script |
+| `wallpaper.jpg` | Desktop wallpaper |
+| `mylogo.txt` | Custom logo used in the setup |
 
 ## Features
 
-* 🎨 Gruvbox-inspired theme
-* 🖥️ i3 Window Manager
-* 🌫️ Picom compositor with transparency and rounded terminal windows
-* 📊 Polybar status bar
-* 🖼️ Conky system monitor
-* 🖋️ JetBrains Mono font
-* 🚀 Lightweight and responsive
-* ⚙️ Easily customizable
-
-## Directory Structure
-
-```text
-.
-├── i3/
-├── picom/
-├── polybar/
-├── conky/
-├── rofi/
-├── alacritty/
-├── dunst/
-└── wallpapers/
-```
+- 🌲 i3 Window Manager
+- 🎨 Gruvbox-inspired theme
+- 🖥️ Alacritty terminal
+- 🌫️ Picom transparency & effects
+- 📊 Polybar
+- 📈 Conky system monitor
+- 🔔 Dunst notifications
+- 🔍 Rofi application launcher
+- ⚡ Lightweight and highly customizable
 
 ## Installation
 
@@ -35,42 +41,61 @@ Clone the repository:
 git clone https://github.com/rin1wav/i3wm-config.git
 ```
 
-Copy the configuration files to your configuration directory:
+Copy the configuration files:
 
 ```bash
-cp -r i3 ~/.config/
-cp -r picom ~/.config/
-cp -r polybar ~/.config/
-cp -r conky ~/.config/
-cp -r rofi ~/.config/
-cp -r alacritty ~/.config/
-cp -r dunst ~/.config/
+cp config ~/.config/i3/config
+
+cp alacritty.toml ~/.config/alacritty/
+
+cp picom.conf ~/.config/picom/
+
+cp config.ini ~/.config/polybar/
+cp launch.sh ~/.config/polybar/
+
+cp config.conf ~/.config/rofi/
+cp black-outline.rasi ~/.config/rofi/
+
+cp conky.conf ~/.config/conky/
+
+cp dunstrc ~/.config/dunst/
 ```
 
-Alternatively, you can manage the files using GNU Stow.
+Make the Polybar launcher executable:
+
+```bash
+chmod +x launch.sh
+```
 
 ## Dependencies
 
-* i3wm
-* Picom
-* Polybar
-* Rofi
-* Alacritty
-* Conky
-* Dunst
-* Feh
-* JetBrains Mono
+- i3wm
+- Picom
+- Polybar
+- Conky
+- Alacritty
+- Rofi
+- Dunst
+- Feh
+- Nerd Fonts / JetBrains Mono (recommended)
 
-## Screenshots
+## Preview
 
-Screenshots coming soon.
+Add screenshots here once your setup is finished.
 
-## About
+```
+assets/
+├── desktop.png
+├── terminal.png
+└── rofi.png
+```
 
-This setup is built around the Gruvbox color palette, aiming for a clean, warm, and minimal desktop that stays lightweight without sacrificing aesthetics.
+## Notes
 
-Feel free to fork the repository, adapt it to your workflow, or use parts of the configuration in your own setup.
+This configuration is continuously updated as I customize my Linux desktop. Feel free to fork the repository and use any part of it in your own setup.
 
-## License
+If you encounter any issues or have suggestions, feel free to open an issue.
 
-Released under the MIT License.
+---
+
+Made with ❤️ using i3wm.
